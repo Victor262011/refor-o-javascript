@@ -203,6 +203,27 @@ if (jogador === computador) {
 //   2, 1, 0  = "F"
 // ------------------------------------------------------------
 
+let nota = Number(prompt("Digite uma nota de 0 a 10: "))
+
+if(nota == 0 || nota == 1 || nota == 2){
+
+    console.log("Conceito: F ")
+}else if(nota == 3 || nota == 4 ){
+
+    console.log("Conceito: D ")
+}else if(nota == 5 || nota == 6 ){
+
+    console.log("Conceito: C ")
+}else if(nota == 7 || nota == 8 ){
+
+    console.log("Conceito: B ")
+}else if(nota == 9 || nota == 10 ){
+
+    console.log("Conceito: A ")
+}else{
+    console.log("Nota inválida! Digite um valor entre 0 e 10.")
+}
+
 
 
 
