@@ -266,6 +266,14 @@ console.log("\n Envelhecer e morrer é o que dá sentido e beleza ao tempo fugaz
 // Exemplo: se N = 5, resultado = 1+2+3+4+5 = 15
 // ------------------------------------------------------------
 
+let N = Number(prompt("Digite um número para somar todos os número até chegar no que você digitou: "))
+let soma = 0
+
+for(let i = 1; i <= N; i++){
+    soma += i
+}console.log(`---------A soma de 1 até ${N} é ${soma}----------`)
+
+
 
 
 
