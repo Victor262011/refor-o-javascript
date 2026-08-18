@@ -166,7 +166,30 @@ else if(imc >= 25 && imc <= 29.9){
 //   let computador = opcoes[Math.floor(Math.random() * 3)]
 // Compare as jogadas e mostre quem ganhou.
 // ------------------------------------------------------------
+let opcoes = ["pedra", "papel", "tesoura"];
 
+
+let jogador = prompt("Escolha 'pedra', 'papel' ou 'tesoura': ").toLowerCase();
+let computador = opcoes[Math.floor(Math.random() * 3)];
+
+
+console.log(`Você escolheu: ${jogador}`);
+console.log(`O computador escolheu: ${computador}`);
+
+
+if (jogador === computador) {
+    console.log("----------Empate!----------");
+} else if (
+    (computador === "pedra" && jogador === "papel") ||
+    (computador === "papel" && jogador === "tesoura") ||
+    (computador === "tesoura" && jogador === "pedra")
+) {
+    console.log("----------Você ganhou!----------");
+} else if (opcoes.includes(jogador)) {
+    console.log("----------O computador ganhou!----------");
+} else {
+    console.log("Jogada inválida! Escolha entre pedra, papel ou tesoura.");
+}
 
 
 
