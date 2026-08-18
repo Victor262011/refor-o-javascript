@@ -19,8 +19,35 @@
 // Crie 2 variáveis com números e mostre no console
 // o resultado da soma, subtração, multiplicação e divisão.
 // ------------------------------------------------------------
+let n1 = Number(prompt("Digite um número:"))
+let n2 = Number(prompt("Digite outro número:"))
+let operacao = prompt(("Escolha uma das operações +, -, *, /:"))
+
+switch(operacao){
+
+case "+" : console.log(`O resultado da soma é ${n1 + n2}`) 
+break;
+
+case "-" : console.log(`O resultado da subtração é ${n1 - n2}`) 
+break;
+
+case "*" : console.log(`O resultado da multiplicação é ${n1 * n2}`) 
+break;
+
+case "/" : 
+if(n2 !== 0){
+console.log(`O resultado da divisão é ${n1 / n2}`) 
+break;
+}else{
+    console.log("Não é possível dividir por zero!")
+}
+
+break;
 
 
+default: console.log("Operação inválida!")
+break;
+}
 
 
 // EXERCÍCIO 2 - Conversor de temperatura
@@ -28,8 +55,10 @@
 // Converta para Fahrenheit e mostre no console.
 // Fórmula: F = C * 9/5 + 32
 // ------------------------------------------------------------
+let celcius = Number(prompt("Digite aqui para converter graus Celsius para Fahrenheit: "))
+let fahrenheit = celcius * 9/5 +  32
 
-
+console.log(`${celcius} graus Celcius são equivalentes a ${fahrenheit} fahrenheit ` )
 
 
 // EXERCÍCIO 3 - Par ou ímpar
