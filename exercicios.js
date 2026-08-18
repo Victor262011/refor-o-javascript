@@ -19,6 +19,7 @@
 // Crie 2 variáveis com números e mostre no console
 // o resultado da soma, subtração, multiplicação e divisão.
 // ------------------------------------------------------------
+
 let n1 = Number(prompt("Digite um número:"))
 let n2 = Number(prompt("Digite outro número:"))
 let operacao = prompt(("Escolha uma das operações +, -, *, /:"))
@@ -69,7 +70,14 @@ console.log(`${celcius} graus Celcius são equivalentes a ${fahrenheit} fahrenhe
 // ------------------------------------------------------------
 
 
+let N1 = Number(prompt("Digite um número para saber se ele é par ou ímpar:"))
 
+
+if(N1 % 2 === 0){
+    console.log("O número que você digitou é par")
+}else {
+    console.log("O número que você digitou é ímpar")
+}
 
 // EXERCÍCIO 4 - Média de notas
 // Crie 3 variáveis com notas (de 0 a 10).
@@ -77,6 +85,20 @@ console.log(`${celcius} graus Celcius são equivalentes a ${fahrenheit} fahrenhe
 // Se a média for >= 7, mostre "Aprovado".
 // Se não, mostre "Reprovado".
 // ------------------------------------------------------------
+
+let nota1 = Number(prompt("Digite a primeira nota de 0 a 10: "))
+let nota2 = Number(prompt("Digite a segunda nota de 0 a 10: "))
+let nota3 = Number(prompt("Digite a terceira nota de 0 a 10: "))
+
+let media = (nota1 +  nota2 + nota3) / 3
+
+if(media >= 7 ){
+    console.log ("---------------APROVADO-------------")
+}else {
+     console.log("---------------REPROVADO------------")
+}
+
+
 
 
 
