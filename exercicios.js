@@ -133,6 +133,28 @@ if (idade >= 18){
 //   30 ou mais     = "Obesidade"
 // ------------------------------------------------------------
 
+let altura = Number(prompt("Digite sua altura:"))
+let peso = Number(prompt("Digite seu peso:"))
+
+let imc = peso / (altura * altura)
+
+if(imc < 18.5){
+    console.log(`${imc}\n-----------Abaixo do peso-------------`)
+}
+
+
+
+else if(imc >= 18.5 && imc <= 24.9){
+    console.log(`${imc}\n------------Peso normal-------------` )
+}
+
+else if(imc >= 25 && imc <= 29.9){
+    console.log(`${imc}\n-----------Sobrepeso-------------`)
+}else {
+    console.log(`${imc}\n-----------Obesidade-------------`)
+}
+
+
 
 
 
