@@ -252,7 +252,11 @@ for (let i = 1; i <= 10; i++){
 // No final, mostre "Feliz Ano Novo!" (ou qualquer mensagem).
 // ------------------------------------------------------------
 
-
+let contador = 0
+for(let i = 10; i  >= 0; i--){
+    console.log(i)
+}
+console.log("\n Envelhecer e morrer é o que dá sentido e beleza ao tempo fugaz de uma vida humana. É exatamente porque envelhecemos e morremos que nossas vidas têm valor e nobreza.")
 
 
 // EXERCÍCIO 11 - Somar números
