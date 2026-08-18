@@ -114,6 +114,12 @@ if(media >= 7 ){
 // Se não, mostre "Menor de idade".
 // ------------------------------------------------------------
 
+let idade = Number(prompt("Digite sua idade para saber se você é maior de idade: "))
+if (idade >= 18){
+    console.log("Você é maior de idade!")
+}else{
+    console.log("Você é menor de idade")
+}
 
 
 
