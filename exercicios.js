@@ -241,8 +241,10 @@ if(nota == 0 || nota == 1 || nota == 2){
 //   ... até "5 x 10 = 50"
 // ------------------------------------------------------------
 
-
-
+let numero = Number(prompt("Digite um número de 1 a 10 para ver sua tabuada( multiplicado até o número 10): "))
+for (let i = 1; i <= 10; i++){
+    console.log(`${numero} x ${i} = ${numero * i}`)
+}
 
 // EXERCÍCIO 10 - Contagem regressiva
 // Use um for para contar de 10 até 0.
